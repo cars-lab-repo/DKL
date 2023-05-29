@@ -1,5 +1,6 @@
 # Work in Progress
 # Citation
+```
 @INPROCEEDINGS{DK-Lock,
   author={Maynard, Jordan and Rezaei, Amin},
   booktitle={2023 24th International Symposium on Quality Electronic Design (ISQED)}, 
