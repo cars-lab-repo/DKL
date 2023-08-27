@@ -1,0 +1,39 @@
+#2 Key inputs
+#4 D-type flipflops
+#x inverters
+#gates
+#KEY = 01
+
+#LOW = 0v
+DKA1 = NOT(KA0)
+LOW = AND(KA0, DKA1)
+
+#initial 2 flipflop activation counter
+DKA2 = AND(DKA1, LOW)
+DKA3 = AND(KA0, DKA4)
+DKA4 = NOT(DFF0)
+MUX0 = OR(DKA2, DKA3)
+DFF0 = DFF(MUX0)
+DKA5 = NOT(KA1)
+DKA6 = AND(DKA5, DKA8)
+DKA7 = AND(KA1, LOW)
+DKA8 = NOT(DFF1)
+MUX1 = OR(DKA6, DKA7)
+
+#functional counter
+DKA9 = AND(DFF0, DFF1)
+DKA10 = AND(DKA9, DKA15, DKA16)
+DKA11 = AND(DKA16, W0)
+DKA12 = AND(W0, W1)
+DKA13 = XOR(W0, W1)
+DKA14 = OR(DKA10, DKA11, DKA12)
+W0 = DFF(DKA13)
+W1 = DFF(DKA14)
+DKA15 = NOT(W0)
+DKA16 = NOT(W1)
+
+#integration with original circuit
+#DKA17 = XOR(KA0, random_wire)
+#DKA18 = AND(W0, DKA17)
+#DKA19 = AND(W1, DKA17)
+#DKA20 = OR(DKA18, DKA19)

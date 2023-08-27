@@ -1,0 +1,36 @@
+n_keyinput0 = NOT(keyinput0)
+LOW = AND(keyinput0, n_keyinput0)
+
+#Bit 0
+ACFF0 = DFF(ACM0)
+DKA0 = NOT(ACFF0)
+ACM0 = MUX(keyinput0, DKA0, LOW)
+
+#Bit 1
+ACFF1 = DFF(ACM1)
+DKA1 = XOR(DKA0, ACFF1)
+ACM1 = MUX(keyinput1, DKA1, LOW)
+
+#Bit 2
+ACFF2 = DFF(ACM2)
+DKA2 = AND(ACFF0, ACFF1)
+DKA3 = XOR(ACFF2, DKA2)
+ACM2 = MUX(keyinput2, DKA3, LOW)
+
+#Bit 3
+ACFF3 = DFF(ACM3)
+DKA4 = AND(DKA2, ACFF2)
+DKA5 = XOR(ACFF3, DKA4)
+ACM3 = MUX(keyinput3, DKA5, LOW)
+
+#Bit 4
+ACFF4 = DFF(ACM4)
+DKA6 = AND(DKA4, ACFF3)
+DKA7 = XOR(ACFF4, DKA6)
+ACM4 = MUX(keyinput4, DKA7, LOW)
+
+#Bit 5
+ACFF5 = DFF(ACM5)
+DKA8 = AND(DKA6, ACFF4)
+DKA9 = XOR(ACFF5, DKA8)
+ACM5 = MUX(keyinput5, DKA9, LOW)
