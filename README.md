@@ -1,6 +1,6 @@
 # Dual-Key-Lock </br> 
-This repository contains resources related to a novel Dual Key logic locking scheme. </br>
-Jordan Maynard, Amin Rezaei </br>
+This repository contains resources related to a Dual Key logic locking scheme. </br>
+Jordan Maynard & Amin Rezaei </br>
 
 # Contents
 * `paper`: published paper based on the source code </br>
