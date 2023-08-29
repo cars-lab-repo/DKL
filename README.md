@@ -1,4 +1,4 @@
-# Dual-Key-Lock </br> 
+# Dual-Key Logic Locking </br> 
 This repository contains resources related to Dual Key logic locking scheme. </br>
 Jordan Maynard & Amin Rezaei </br>
 
