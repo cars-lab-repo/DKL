@@ -1,4 +1,4 @@
-# Dual-Key Logic Locking </br> 
+# DK-Lock: Dual-Key Logic Locking </br> 
 This repository contains resources related to dual-key logic locking scheme. </br>
 Jordan Maynard & Amin Rezaei </br>
 
@@ -6,7 +6,7 @@ Jordan Maynard & Amin Rezaei </br>
 * `paper`: published paper based on the source code </br>
 * `src`: source code, executable, and benchmarks </br>
 * `src/encrypted`: locked benchmarks - output location of the tool </br>
-* `src/modules` : benchmark files containing important structures of DK Lock </br>
+* `src/modules` : benchmark files containing important structures of DK-Lock </br>
 
 # Compiling
 1. g++ version 8.1.0 & Windows 10/11 is used to compile. To download g++, follow [this link](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win64/Personal%20Builds/mingw-builds/8.1.0/threads-posix/seh/x86_64-8.1.0-release-posix-seh-rt_v6-rev0.7z/download).
