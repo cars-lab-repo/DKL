@@ -21,7 +21,7 @@ Jordan Maynard, Amin Rezaei </br>
 3. Choose between no scan exposed, sequential scan exposed, or combinational scan exposed.
 4. Choose key size and key values.
 5. Choose number of cycles before activation.
-- NOTE: If the input benchmark is inside a folder, a folder of the same name must exist in the /encrypted/ folder for the script to create an output. 
+- NOTE: If the input benchmark is inside a folder, a folder of the same name must exist in the /encrypted/ folder for the script to create an output.
 - *Example: Input file `iscas89/s27` -> Output file `encrypted/iscas89/s27_enc10.bench`*
 
 # Citation
