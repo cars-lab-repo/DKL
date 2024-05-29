@@ -1,6 +1,6 @@
 # DK-Lock: Dual-Key Logic Locking </br> 
 This repository contains resources related to K-Gate Lock logic locking scheme. </br>
-[Kevin Lopez]() & [Amin Rezaei](https://github.com/r3zaei) </br>
+[Jordan Maynard]() & [Amin Rezaei](https://github.com/r3zaei) </br>
 
 # Contents
 * `paper`: published paper based on the source code </br>
